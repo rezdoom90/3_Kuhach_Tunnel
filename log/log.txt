@@ -1,0 +1,5 @@
+2017-03-28 09:10:48.874 [main] INFO  by.epam.tunnel.reader.InputFileDataReader - Input string is empty. Using default.
+2017-03-28 09:10:48.917 [main] INFO  by.epam.tunnel.parser.StringDataParser - String data parsing done. Schedule received.
+2017-03-28 09:10:48.918 [main] INFO  by.epam.tunnel.entity.TunnelComplex - Tunnel Complex set online.
+2017-03-28 09:10:48.920 [Tunnel 1] INFO  by.epam.tunnel.entity.Tunnel - 0 tunnel train initialization complete.
+2017-03-28 09:10:48.920 [Tunnel 2] INFO  by.epam.tunnel.entity.Tunnel - 1 tunnel train initialization complete.
