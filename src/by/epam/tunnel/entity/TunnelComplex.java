@@ -1,5 +1,6 @@
 package by.epam.tunnel.entity;
 
+import by.epam.tunnel.exception.WrongInputException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,7 +13,16 @@ public class TunnelComplex {
     private Tunnel tunnel1;
     private Tunnel tunnel2;
 
-    public TunnelComplex(ArrayList<Integer> data) {
+    public TunnelComplex(ArrayList<Integer> data) throws WrongInputException{
+        final int PARAMS = 4;
+
+        //input array test
+        for (int i = 0; i < 4; i++) {
+            if (data.get(i) < 1) {
+                throw new WrongInputException();
+            }
+        }
+
         setTunnel1(data.get(0), data.get(2), 0);
         setTunnel2(data.get(1), data.get(3), 1);
     }
